@@ -518,7 +518,6 @@ main .recent-orders a{
  }
  aside .sidebar a:last-child{
    position: relative;
-   margin-top: 1.3rem;
  }
 
  main .insights{
@@ -528,8 +527,8 @@ main .recent-orders a{
  main .recent-orders{
    width: 94%;
    position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
+   /* left: 50%;
+   transform: translateX(-50%); */
    margin: 2rem 0 0 8.8rem;
  }
  main .recent-orders table{
@@ -550,7 +549,7 @@ main .recent-orders a{
 
     aside{
       position: fixed;
-      left: 0;
+      left: -100%;
       background: var(--color-white);
       width: 18rem;
       z-index: 3;
@@ -558,6 +557,13 @@ main .recent-orders a{
       height: 100vh;
       padding-right:var(--card-padding) ;
       display: none;
+      animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+      to{
+         left: 0;
+      }
     }
     aside .logo h2{
       display: inline;
