@@ -23,6 +23,16 @@
     --box-shadow: 0 2rem 3rem var(--color-light)
 
 }
+ /* Dark theme variables */
+   .dark-theme-variables{
+      --color-background:#181a1e;
+      --color-white: #202528;
+      --color-dark: #edeffd;
+      --color-dark-variant: #a3bdcc;
+      --color-light: rgba(0,0,0,0.4);
+      --box-shadow: 0 2rem 3rem var(var(--color-light))
+
+   }
 
 *{
     box-sizing: border-box;
@@ -330,7 +340,7 @@ h4{
  }
 
  main .recent-orders table{
-    background: white;
+    background: var(--color-white);
     width: 100%;
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
@@ -441,7 +451,7 @@ main .recent-orders a{
 }
 
 .right .sales-analytics .item{
-    background: white;
+    background: var(--color-white);
     display: flex;
     align-items: center;
     gap: 1rem;
