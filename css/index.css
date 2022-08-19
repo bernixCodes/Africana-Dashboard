@@ -537,8 +537,8 @@ main .recent-orders a{
  main .recent-orders{
    width: 94%;
    position: absolute;
-   /* left: 50%;
-   transform: translateX(-50%); */
+   left: 50%;
+   transform: translateX(-50%);
    margin: 2rem 0 0 8.8rem;
  }
  main .recent-orders table{
